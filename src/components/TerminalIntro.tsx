@@ -1,22 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const TerminalIntro = () => {
   const [displayText, setDisplayText] = useState('');
-  const text = `
+  const professionalText = `
 > whoami
-gianluca_mazza
+Gianluca Mazza
 
 > cat about.txt
-AI researcher and blockchain innovator specializing in
-machine learning systems and distributed computing.
+AI Researcher and Blockchain Innovator with expertise in
+Machine Learning Systems and Distributed Computing.
 Currently advancing AI technologies at Venere Labs
-and building decentralized solutions at Scaling Parrots.
+and developing decentralized solutions at Scaling Parrots.
 
 > ls ./skills
-ai/ blockchain/ ml/ crypto/
+AI/ Blockchain/ Machine Learning/ Cryptocurrency/
 
 > ./status
-Training neural networks...
+Currently training neural networks...
 `;
 
   useEffect(() => {
@@ -24,8 +24,8 @@ Training neural networks...
     let currentIndex = 0;
 
     const timer = setInterval(() => {
-      if (currentIndex < text.length) {
-        currentText += text[currentIndex];
+      if (currentIndex < professionalText.length) {
+        currentText += professionalText[currentIndex];
         setDisplayText(currentText);
         currentIndex++;
       } else {

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Terminal, Code, Cpu, Database, Server, Braces } from 'lucide-react';
 import Header from './components/Header';
 import Section from './components/Section';
@@ -9,9 +8,9 @@ import TerminalIntro from './components/TerminalIntro';
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#0a0f1c] text-gray-100 font-mono">
+    <div className="min-h-screen bg-[#0a0f1c] text-gray-100 font-sans">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="pt-32 min-h-screen flex items-start justify-center px-4 bg-grid-pattern">
         <div className="absolute inset-0 bg-gradient-to-b from-[#0a0f1c] via-transparent to-[#0a0f1c]"></div>
@@ -21,20 +20,20 @@ function App() {
       </section>
 
       {/* Tech Stack */}
-      <Section title="~/tech_stack" id="tech-stack" className="border-t border-gray-800">
+      <Section title="Tech Stack" id="tech-stack" className="border-t border-gray-800">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <SkillCard
-            icon={<Terminal className="w-8 h-8 text-green-400" />}
+            icon={<Terminal className="w-8 h-8 text-blue-400" />}
             title="Core Systems"
             items={["Bitcoin Core", "Linux/Unix", "Docker", "Kubernetes"]}
           />
           <SkillCard
-            icon={<Code className="w-8 h-8 text-green-400" />}
+            icon={<Code className="w-8 h-8 text-blue-400" />}
             title="Languages"
             items={["Python", "TypeScript", "Rust", "Solidity"]}
           />
           <SkillCard
-            icon={<Cpu className="w-8 h-8 text-green-400" />}
+            icon={<Cpu className="w-8 h-8 text-blue-400" />}
             title="Blockchain"
             items={[
               "Bitcoin Protocol",
@@ -44,17 +43,17 @@ function App() {
             ]}
           />
           <SkillCard
-            icon={<Database className="w-8 h-8 text-green-400" />}
+            icon={<Database className="w-8 h-8 text-blue-400" />}
             title="Data & AI"
             items={["Machine Learning", "Neural Networks", "Data Analysis", "PyTorch"]}
           />
           <SkillCard
-            icon={<Server className="w-8 h-8 text-green-400" />}
+            icon={<Server className="w-8 h-8 text-blue-400" />}
             title="Infrastructure"
             items={["AWS", "Azure", "CI/CD", "Microservices"]}
           />
           <SkillCard
-            icon={<Braces className="w-8 h-8 text-green-400" />}
+            icon={<Braces className="w-8 h-8 text-blue-400" />}
             title="Web3"
             items={[
               "Smart Contracts",
@@ -67,33 +66,33 @@ function App() {
       </Section>
 
       {/* Projects */}
-      <Section title="~/projects" id="projects" className="border-t border-gray-800">
+      <Section title="Projects" id="projects" className="border-t border-gray-800">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <ProjectCard
             title="AI Trading System"
-            description="Advanced machine learning system for market prediction and automated trading strategies using deep neural networks."
+            description="An advanced machine learning system for market prediction and automated trading strategies using deep neural networks."
             tags={["Python", "TensorFlow", "Time Series"]}
           />
           <ProjectCard
             title="Blockchain Analytics Engine"
-            description="Real-time blockchain data analysis platform with ML-powered transaction pattern detection."
+            description="A real-time blockchain data analysis platform with ML-powered transaction pattern detection."
             tags={["Python", "ML", "Big Data"]}
           />
           <ProjectCard
             title="Neural Network Framework"
-            description="Custom deep learning framework optimized for financial modeling and prediction tasks."
+            description="A custom deep learning framework optimized for financial modeling and prediction tasks."
             tags={["PyTorch", "CUDA", "Mathematics"]}
           />
           <ProjectCard
             title="Mining Operations Dashboard"
-            description="Real-time monitoring and optimization platform for large-scale cryptocurrency mining operations."
+            description="A real-time monitoring and optimization platform for large-scale cryptocurrency mining operations."
             tags={["React", "Node.js", "WebSocket"]}
           />
         </div>
       </Section>
 
       {/* Experience Timeline */}
-      <Section title="~/experience" id="experience" className="border-t border-gray-800">
+      <Section title="Experience" id="experience" className="border-t border-gray-800">
         <div className="space-y-6">
           <ExperienceCard
             title="Co-Founder"
@@ -140,8 +139,8 @@ function App() {
 
       {/* Footer */}
       <footer className="border-t border-gray-800 py-8 mt-20">
-        <div className="max-w-7xl mx-auto px-4 text-center text-green-400">
-          <p className="font-mono text-sm">© {new Date().getFullYear()} Gianluca Mazza</p>
+        <div className="max-w-7xl mx-auto px-4 text-center text-blue-400">
+          <p className="font-sans text-sm">© {new Date().getFullYear()} Gianluca Mazza</p>
         </div>
       </footer>
     </div>
