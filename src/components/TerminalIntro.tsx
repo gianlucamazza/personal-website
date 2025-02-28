@@ -34,7 +34,7 @@ Currently training neural networks...
     }, 30);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [professionalText]);
 
   return (
     <div className="bg-gray-900 p-6 rounded-lg border border-green-500/20 shadow-lg max-w-2xl w-full font-mono text-sm md:text-base">
